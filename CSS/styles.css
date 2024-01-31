@@ -4,6 +4,9 @@
     --colorBodyDark: #646C75;
     
 }
+*, *::before,*::after{
+    box-sizing: border-box;
+}
 
 /*Typography*/
 body{
@@ -12,6 +15,7 @@ body{
 }
 html{
     scroll-behavior: smooth;
+    font-weight: 62.5%;
 }
 
 h1{
@@ -25,3 +29,49 @@ h2{
 h3{
     color: var(--primaryColor);
 }
+a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--primaryColor);
+}
+ul{
+    list-style: none;
+}
+
+/*Button*/
+.btn{
+    border-radius: 4px;
+    border: 1px solid var(--primaryColor);
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    height: 30px;
+}
+.btn:hover{
+    background-color: var(--primaryColor);
+    color: #fff;
+    
+}
+
+
+/*Navigation Bar*/
+.nav{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+
+.companyLogo{
+    width: 70px;
+    height: 70px;    
+}
+@media screen and (min-width:768px){
+    .nav{
+        justify-content: flex-start;
+    }
+    .companyLogo{
+        width: 100px;
+        height: 100px;
+    }
+}
+
