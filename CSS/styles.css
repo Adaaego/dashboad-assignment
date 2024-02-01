@@ -2,6 +2,8 @@
     --primaryColor: #686BF5;
     --colorBody:#858587;
     --colorBodyDark: #646C75;
+    --fontSize: 1rem;
+    --boxShadow: 0 0 20px 10px #f3f3f3;
     
 }
 *, *::before,*::after{
@@ -12,6 +14,7 @@
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--colorBody);
+    background-color: #E7E7FF;
 }
 html{
     scroll-behavior: smooth;
@@ -20,7 +23,8 @@ html{
 
 h1{
     color: var(--primaryFontColor);
-    font-size: 2rem;
+    font-size: var(--fontSize);
+    color: var(--primaryColor);
 }
 h2{
     color: var(--darkFontColor);
@@ -29,6 +33,13 @@ h2{
 h3{
     color: var(--primaryColor);
 }
+@media screen and (min-width:768px){
+    h1{
+        font-size: calc(var(--fontSize) + 0.7rem);
+    }
+}
+
+
 a{
     text-decoration: none;
     text-align: center;
@@ -40,17 +51,22 @@ ul{
 
 /*Button*/
 .btn{
-    border-radius: 4px;
-    border: 1px solid var(--primaryColor);
-    padding: 0.5rem;
-    font-size: 0.7rem;
-    height: 30px;
-}
-.btn:hover{
+    border-radius: 40px;
     background-color: var(--primaryColor);
     color: #fff;
+    border: 0;
+    padding: 1rem 2.5rem;
+    font-size: 0.5rem;
+    height: 35px;
+    text-align: center;
     
 }
+.btn a{
+    color: #fff;
+    text-align: center;
+}
+
+
 
 
 /*Navigation Bar*/
@@ -74,4 +90,64 @@ ul{
         height: 100px;
     }
 }
+/*forms*/
+.formContainer{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: block;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 7px;
+    box-shadow:var(--boxShadow);
+    height: 35px;
+    
+}
+::placeholder{
+    font-size: calc(var(--fontSize) - 0.3rem);
+    color:var(--colorBody) ;
+    padding: 1rem;
+    font-weight: bold;
+}
+form .btn {
+    box-shadow: var(--boxShadow);
+}
+.loginOption{
+    font-size: 0.5rem;
+    margin-top: 30px;
+}
 
+.facebook{
+    margin-right: 5px;
+}
+
+.signup{
+margin-top: 50px;
+font-size: calc(var(--fontSize) - 0.5rem);
+
+}
+
+/*Icons*/
+.loginIcon{
+    width: 25px;
+    height: 25px;
+}
+.iconContainer--round{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: var(--boxShadow);
+    padding: 0.2rem;
+
+}
