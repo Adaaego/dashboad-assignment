@@ -15,6 +15,7 @@ body{
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: var(--colorBody);
     background-color: #E7E7FF;
+    height: 100vh;
 }
 html{
     scroll-behavior: smooth;
@@ -103,6 +104,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .input{
     display: block;
@@ -111,8 +113,19 @@ ul{
     border-radius: 7px;
     box-shadow:var(--boxShadow);
     height: 35px;
+    font-size: calc(var(--fontSize) - 0.2rem);
+    color: var(--colorBodyDark);
     
 }
+.input:focus{
+    outline: 0;
+    border: 2px solid var(--primaryColor);
+}
+.input:focus:invalid{
+    border: 1px solid red;
+
+}
+
 ::placeholder{
     font-size: calc(var(--fontSize) - 0.3rem);
     color:var(--colorBody) ;
@@ -123,7 +136,7 @@ form .btn {
     box-shadow: var(--boxShadow);
 }
 .loginOption{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     margin-top: 30px;
 }
 
@@ -133,8 +146,11 @@ form .btn {
 
 .signup{
 margin-top: 50px;
-font-size: calc(var(--fontSize) - 0.5rem);
+font-size: calc(var(--fontSize) - 0.3rem);
 
+}
+.google{
+    margin: left 5px; ;
 }
 
 /*Icons*/
