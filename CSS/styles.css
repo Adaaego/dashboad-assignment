@@ -4,9 +4,12 @@
     --colorBodyDark: #646C75;
     --fontSize: 1rem;
     --boxShadow: 0 0 20px 10px #f3f3f3;
+    --IconColor: #888F95;
     
 }
-*, *::before,*::after{
+*, 
+*::before,
+*::after{
     box-sizing: border-box;
 }
 
@@ -32,7 +35,9 @@ h2{
     font-size: 3rem;
 }
 h3{
-    color: var(--primaryColor);
+   color: var(--colorBodyDark);
+   font-size: 0.6rem;
+   font-weight: 400;
 }
 @media screen and (min-width:768px){
     h1{
@@ -166,4 +171,33 @@ font-size: calc(var(--fontSize) - 0.3rem);
     box-shadow: var(--boxShadow);
     padding: 0.2rem;
 
+}
+
+
+/*STYLES FOR DASHBOARD*/
+/*Navigation Bar*/
+
+.NavBar{
+display: flex;
+flex-direction: column;
+
+}
+.companyLogo{
+    align-self: self-start;
+}
+.NavBar p {
+    font-size: 0.7rem;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.NavIcon{
+    width: 20px;
+
+}
+
+.NavIcon__container{
+    display: flex;
+    flex-direction: row;
+    
 }
