@@ -33,12 +33,16 @@ h1{
 }
 h2{
     color: var(--darkFontColor);
-    font-size: 3rem;
+    font-size: var(--fontSize);
+    color: var(--colorBodyDark);
 }
 h3{
    color: var(--colorBodyDark);
    font-size: 0.6rem;
    font-weight: 400;
+}
+p{
+    color: var(--colorBody);
 }
 @media screen and (min-width:768px){
     h1{
@@ -240,15 +244,40 @@ flex-direction: column;
     background-color: gold;
     border-radius: 4px;
     height: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.paypal{
+    background-color: #FFE7E3;
+}
+.wallet{
+    background-color:#EEEDFF;
+}
+.transfer{
+    background-color:#E0F7FD ;
+}
+.CreditCard{
+    background-color:#EEFBE7;
+}
+.mastercard{
+background-color: #FFF5E1;
 }
 
 /*TRANSACTIONS*/
+.Transactions{
+    margin: 0 0 20px;
+}
+.ContentWrapper{
+    display: flex;
+}
 .TransactionContent{
     display: flex;
     justify-content: space-between;
 }
 
 .TransactionDetails{
+    margin-left: 10px;
+    
 
 
 }
@@ -258,9 +287,19 @@ flex-direction: column;
 }
 .TransactionType{
     color: var(--colorBodyDark);
+    font-size: calc(var(--fontSize) - 0.4rem);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom:0 ;
+
+}
+.TransactionAmount{
     font-size: calc(var(--fontSize) - 0.3rem);
     font-weight: 600;
-
+    margin-top: 15px;
+}
+.Currency{
+    opacity: 0.7;
 }
 
 /*ICONS*/
