@@ -5,6 +5,8 @@
     --fontSize: 1rem;
     --boxShadow: 0 0 20px 10px #f3f3f3;
     --IconColor: #888F95;
+    --PercentageIncrease: #93D56C;
+    --PercentageDecline: #D95849;
     
 }
 *, 
@@ -16,7 +18,6 @@
 /*Typography*/
 body{
     font-family: Inter, Arial, Helvetica, sans-serif;
-    color: var(--colorBody);
     background-color: #E7E7FF;
     height: 100vh;
 }
@@ -53,6 +54,25 @@ a{
 }
 ul{
     list-style: none;
+}
+.percentage{
+    font-size: 0.6rem;
+}
+.percentageIncrease{
+    color: var(--PercentageIncrease);
+}
+.percentageDecline{
+    color: var(--PercentageDecline);
+}
+.amount{
+    font-weight: 700;
+    color: var(--colorBodyDark);
+    margin: 0;
+}
+.card__label{
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: var(--colorBody);
 }
 
 /*Button*/
@@ -198,6 +218,104 @@ flex-direction: column;
 
 .NavIcon__container{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
+}
+/*CARDS*/
+
+.card{
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 0.7rem;
+    width: 130px;
+    margin-top: 70px;
+    margin-left: 40PX;
+}
+.card--large{
+    width: 260px;
     
+}
+/*BOXES*/
+.box{
+    width: 30px;
+    background-color: gold;
+    border-radius: 4px;
+    height: 30px;
+}
+
+/*TRANSACTIONS*/
+.TransactionContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.TransactionDetails{
+
+
+}
+.TransactionName{
+    font-weight: 300;
+    color: var(--colorBody);
+}
+.TransactionType{
+    color: var(--colorBodyDark);
+    font-size: calc(var(--fontSize) - 0.3rem);
+    font-weight: 600;
+
+}
+
+/*ICONS*/
+.IconMain{
+    width: 25px;
+    height: 30px;
+
+}
+
+.MenuIcon{
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    margin-top: 2PX;
+}
+.IconWrapper{
+    border-radius: 7px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+
+}
+.profitContainer{
+    background-color:#E9F8DB;
+}
+.salesContainer{
+   background-color: #D4F5FE; 
+}
+.paymentIcon{
+    width: 25px;
+}
+.paymentContainer{
+    background-color: #FDE0D9;
+
+}
+.transactionContainer{
+    background-color: #E7E8FE;
+}
+
+.IncreaseArrow{
+    height: 8px;
+    margin-top: 11px;
+    width: 10px;
+    font-size: 50px;
+}
+
+.menuContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+
+}
+.percentageContainer{
+    display: flex;
+      
 }
