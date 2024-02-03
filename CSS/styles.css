@@ -231,12 +231,16 @@ flex-direction: column;
     border-radius: 7px;
     padding: 0.7rem;
     width: 130px;
+    /*
     margin-top: 70px;
-    margin-left: 40PX;
+    margin-left: 40PX; */
 }
 .card--large{
-    width: 260px;
+    width: 500px;
     
+}
+.card h1{
+    font-size: 1rem;
 }
 /*BOXES*/
 .box{
@@ -357,4 +361,77 @@ background-color: #FFF5E1;
 .percentageContainer{
     display: flex;
       
+}
+.confetti{
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.TaglineContainer{
+    display: flex;
+}
+.happyEmoji{
+ width: 12px;
+ height: 12px;
+ margin-top: 25px;
+
+}
+.Card--Message{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+.card .message{
+    font-size: 0.6rem;
+   
+}
+@media screen and (min-width:768px){
+    
+    .Card--Message{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .message{
+        margin-bottom: 40px;
+    }
+ 
+}
+
+
+/*BADGES*/
+.badge{
+    padding:0.3rem 0.5rem;
+    font-size:calc(var(--fontSize) - 0.5rem);
+    display: inline-flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.badge--square{
+    border-radius: 4px;
+    background-color:#E7EAFE;
+}
+.badge__label{
+    color:#8B8BC3;
+    font-weight: 700;
+}
+/*Images*/
+.MessageImage{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 80px;
+
+}
+@media screen and (min-width:768px){
+  .MessageImage{
+        justify-self: center;
+    }
 }
