@@ -236,7 +236,7 @@ flex-direction: column;
     margin-left: 40PX; */
 }
 .card--large{
-    width: 500px;
+    width: 260px;
     
 }
 .card h1{
@@ -311,6 +311,10 @@ background-color: #FFF5E1;
     height: 30px;
 
 }
+.Icon--Small{
+    width: 20px;
+    height: 20px;
+}
 
 .MenuIcon{
     width: 20px;
@@ -326,6 +330,9 @@ background-color: #FFF5E1;
     padding: 0.4rem 0.6rem;
     height: 40px;
 
+}
+.IconWrapper--Small{
+    padding: 0.1;
 }
 .DownArrow{
     width: 50px;
@@ -375,6 +382,18 @@ background-color: #FFF5E1;
 
 .walletContainer{
     background-color: #DBF9FC;
+}
+.PhoneContainer{
+    background-color: #EDEBFE;
+}
+.hangerContainer{
+    background-color: #EEFBE7;
+}
+.homeContainer{
+    background-color:#E3F4FE;
+}
+.sportContainer{
+    background-color: #EFF2F8;
 }
 
 .menuContainer{
@@ -561,4 +580,85 @@ background-color: #FFF5E1;
 }
 .ProfileReport H2{
     margin-bottom: 4px;
+}
+
+/*ORDER STATS*/
+.TotalSales{
+    font-size: calc(var(--fontSize) - 0.4rem);
+    font-weight: 600;
+    opacity: 0.6;
+    margin-top: 7px;
+}
+.stats h2{
+    margin: 3px 0 2px;
+}
+
+.OrderChart{
+    width: 80px;
+}
+.OrderDetails{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.OrderPercentage{
+    position: relative;
+    bottom: 55px;
+    left: 25px;
+
+}
+
+.ChartDetails .OrderPercentage{
+    font-size: calc(var(--fontSize) - 0.4rem);
+    font-weight: 700;
+    color: var(--colorBodyDark);
+
+}
+.ChartDetails .duration{
+    opacity: 0.6;
+}
+
+.ChartDetails {
+    margin-left: 40px;
+}
+.OrderContainer h3{
+    font-weight: 600;
+    opacity: 0.6;
+}
+.OrderStatsHistory{
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.OrderContent{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.OrderCategory{
+    color: var(--colorBodyDark);
+    font-size: calc(var(--fontSize) - 0.4rem);
+    font-weight: 600;
+
+}
+
+.OrderType{
+    font-weight: 300;
+    font-size: calc(var(--fontSize) - 0.4rem);
+    color: var(--colorBody);
+    margin-top: 0;
+    margin-bottom:0;
+    opacity: 0.6;
+
+}
+.OrderStatistics{
+    font-size: calc(var(--fontSize) - 0.2rem);
+    opacity: 0.9;
+}
+.OrderContainer .amount{
+    font-size: calc(var(--fontSize) + 0.5rem);
+}
+.statDetails{
+    margin-bottom: ;
 }
