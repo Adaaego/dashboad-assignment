@@ -765,7 +765,13 @@ background-color: #FFF5E1;
 
 /* MAIN NAVIGATION BAR*/
 .NavigationBar{
+    /*
     display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    background-color: #fff;
+    border-radius: 7px;
+    align-content: center;
 }
 .NavigationIcon{
     width: 30PX;
@@ -776,10 +782,59 @@ background-color: #FFF5E1;
     height: 30px;
     border-radius: 15px;
 }
+.pfp__container{
+    position: relative;
+}
 .ActivityStatus{
     width: 7px;
     height: 7px;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}@media screen and (min-width:768px){
+    .ActivityStatus{
+        top: 23px;
+    }
 }
+@media screen and (min-width:1024px){
+    .NavigationBar .menu{
+        display: none;
+    }
+}
+
+.NavigationBar .InputGroup{
+    flex-grow: 1;
+}
+.NavigationWrapper .menu{
+    margin-left: 25px;
+    width: 15px;
+    height: 15px;
+}
+ 
+.NavigationWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.NavigationWrapper .github{
+    margin-left: 0;
+    margin-right: 30px;
+}
+.NavigationWrapper .bell{
+    margin-left: 0;
+    margin-right: 30px;
+}
+.NavigationWrapper .brightness{
+    margin-left: 0;
+    margin-right: 30px;
+}
+.NavigationWrapper .pfp__container{
+    margin-left: 0;
+    margin-right: 30px;
+}
+
 
 /*INPUTS*/
 .NavInput{
@@ -795,6 +850,7 @@ background-color: #FFF5E1;
     font-weight: 300;
     opacity: 0.6;
     
+    
 }
 @media screen and (min-width:768px){
     .NavInput{
@@ -805,12 +861,12 @@ background-color: #FFF5E1;
     }
 }
 
+
 .InputGroup{
     
     background-color: #fff;
     display: flex;
     align-items: center;
-    padding: 0.3rem;
     font-size: calc(bar(--fontSize) - 0.4rem);
     
 }
