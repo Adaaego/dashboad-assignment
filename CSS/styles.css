@@ -282,9 +282,8 @@ background-color: #FFF5E1;
 .TransactionDetails{
     margin-left: 10px;
     
-
-
 }
+
 .TransactionName{
     font-weight: 300;
     color: var(--colorBody);
@@ -325,8 +324,37 @@ background-color: #FFF5E1;
     justify-content: center;
     align-items: center;
     padding: 0.4rem 0.6rem;
+    height: 40px;
 
 }
+.DownArrow{
+    width: 50px;
+}
+
+.IncreaseArrow{
+    height: 8px;
+    margin-top: 11px;
+    width: 10px;
+    font-size: 50px;
+}
+
+.confetti{
+    width: 15px;
+    height: 15px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.happyEmoji{
+    width: 12px;
+    height: 12px;
+    margin-top: 25px;
+   
+   }
+
+   
+/*ICON CONTAINERS*/ 
+
 .profitContainer{
     background-color:#E9F8DB;
 }
@@ -344,11 +372,9 @@ background-color: #FFF5E1;
     background-color: #E7E8FE;
 }
 
-.IncreaseArrow{
-    height: 8px;
-    margin-top: 11px;
-    width: 10px;
-    font-size: 50px;
+
+.walletContainer{
+    background-color: #DBF9FC;
 }
 
 .menuContainer{
@@ -362,22 +388,11 @@ background-color: #FFF5E1;
     display: flex;
       
 }
-.confetti{
-    width: 15px;
-    height: 15px;
-    margin-top: 12px;
-    margin-left: 10px;
-}
 
 .TaglineContainer{
     display: flex;
 }
-.happyEmoji{
- width: 12px;
- height: 12px;
- margin-top: 25px;
 
-}
 .Card--Message{
     width: 100vw;
     display: flex;
@@ -418,11 +433,15 @@ background-color: #FFF5E1;
 .badge--square{
     border-radius: 4px;
     background-color:#E7EAFE;
+    color:#8B8BC3;
+    font-weight: 700;
 }
+
 .badge__label{
     color:#8B8BC3;
     font-weight: 700;
 }
+
 /*Images*/
 .MessageImage{
     width: 200px;
@@ -433,5 +452,63 @@ background-color: #FFF5E1;
 @media screen and (min-width:768px){
   .MessageImage{
         justify-self: center;
+    }
+}
+
+/*REVENUE BLOCK*/
+
+.barChart{
+    width: 300px;
+}
+.GrowthGauge{
+    width: 250px;
+}
+
+.dollar,
+   .RevenueWallet{
+    width: 20px;
+    height: 15px;
+   }
+   
+   .dollarContainer{  
+    background-color:#EEEDFE;
+}
+.GrowthContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.GrowthYear{
+    display: flex;
+}
+.YearOne{
+    display: flex;
+    margin-right: 25px;
+}
+
+.YearTwo{
+    display: flex;
+}
+.TransactionYear{
+    margin-bottom: 3px;
+}
+.YearTotal{
+    font-size: calc(var(--fontSize) - 0.2rem);
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.YearDetails{
+    margin-left: 7px;
+}
+.BarChartContainer{
+    border-bottom: 2px solid #F4F6F5;
+}
+@media screen and (min-width:768px){
+    .BarChartContainer{
+        border-bottom: 0;
+        border-right: 2px solid #F4F6F5;
+        width: 50vw;
     }
 }
