@@ -600,18 +600,22 @@ background-color: #FFF5E1;
 }
 
 .OrderChart{
+    
     width: 80px;
 }
 .OrderDetails{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    flex-grow: 0;
+    position: relative;
 }
 
 .OrderPercentage{
-    position: relative;
-    bottom: 55px;
-    left: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 180px;
+    
 
 }
 
@@ -631,6 +635,7 @@ background-color: #FFF5E1;
 .OrderContainer h3{
     font-weight: 600;
     opacity: 0.6;
+    
 }
 .OrderStatsHistory{
     margin-left: 10px;
