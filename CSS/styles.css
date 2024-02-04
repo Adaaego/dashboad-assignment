@@ -337,6 +337,12 @@ background-color: #FFF5E1;
 .DownArrow{
     width: 50px;
 }
+.UpArrow{
+    width: 10px;
+    height: 10px;
+    padding-top: 3px;
+    margin-left: 10PX;
+}
 
 .IncreaseArrow{
     height: 8px;
@@ -661,4 +667,93 @@ background-color: #FFF5E1;
 }
 .statDetails{
     margin-bottom: ;
+}
+
+/*INCOME BLOCK*/
+.LineChart{
+    width: 240px;
+}
+
+.IncomeGauge{
+    width: 100px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 0;
+}
+    
+.headingList{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-right: 3rem;
+}
+
+.headingList .ListItem{
+    font-size: calc(var(--fontSize) - 0.4rem);
+    color: var(--colorBody);
+    font-weight: 600;
+    opacity: 0.8;
+}
+.IncomeBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.Income__label{
+    font-weight: 600;
+    opacity: 0.8;
+    color: var(--colorBodyDark);
+}
+.Income__amount{
+    font-weight: 700;
+    color: var(--colorBodyDark);
+    margin-top: 0;
+}
+
+.Income__Info{
+    display: flex;
+    
+}
+.Income__Info .percentage{
+    margin-top: 5px;
+    margin-left: 2px;
+}
+.Income__details .UpArrow{
+    margin-top: 0;
+}
+.IncomeDetails{
+   padding-left: 1.5rem;
+}
+.income{
+    margin-left:0 ;
+    margin-right: 15px;
+}
+.expenses{
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.WeeklyIncome{
+    display: flex;
+}
+
+.WeeklyIncome p{
+    margin-top: 25px;
+    font-size: calc(var(--fontSize) - 0.5rem);
+    margin-left: 0;
+    margin-right: 15px;
+    opacity: 0.6;
+}
+.darkText{
+    color: var(--colorBodyDark);
+    font-weight: 600;
+    opacity: 1;
+}
+
+.ListItem:hover{
+    background-color: #6A6BFF;
+    border-radius: 7px;
+    padding:0.3rem;
+    color: #fff;
 }

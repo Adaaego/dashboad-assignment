@@ -11,86 +11,41 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <div class="card card--large">
-        <div class="menuContainer">
-            <div class="stats">
-                <H2 class="OrderStatistics">Order Statistics</H2>
-                <p class="TotalSales">42.82K Total Sales</p>
-            </div>
-            <img src="CSS/Images/menu icon.png" alt="menu icon" class="MenuIcon">
-     </div>
-<div class="OrderDetails">
-    
-         <div class="OrderContainer">
-            <p class="amount">8,258</p>
-            <h3>Total orders</h3>
+    <div class="card card--large IncomeBlock">
+        <div class="blockHeading">
+            <ul class="headingList">
+                <li class="ListItem income">INCOME</li>
+                <li class="ListItem expenses">EXPENSES</li>
+                <li class="ListItem profit">PROFIT</li>
+            </ul>
+        </div>
+
+     <div class="IncomeDetails">
+         <div class="TotalIncome">
+             <h3 class="Income__label">Total Income</h3>
          </div>
-         <div class="ChartDetails">
-            <img src="CSS/Images/total orders.png" alt="Order chart" class="OrderChart">
-            <p class="OrderPercentage">38% <br> <span class="duration">Weekly</span></p>
+         <div class="Income__Info">
+                     <p class="Income__amount">$459.1k</p>
+                         <svg class="icon UpArrow">
+                             <use xlink:href="CSS/Images/sprite (8).svg#Faceup"></use>
+                           </svg>
+                           <p class="percentage percentageIncrease">68.2%</p>
+                     </div>
          </div>
-</div>
-<div class="statDetails">
-    <div class="OrderContent">
-        <div class="ContentWrapper">
-            <span class="IconWrapper IconWrapper--Small PhoneContainer">
-                <svg class="icon Icon--Small">
-                    <use xlink:href="CSS/Images/sprite (6).svg#iphone"></use>
-                  </svg>
-            </span>
-            <div class="OrderStatsHistory">
-                <h3 class="OrderCategory">Electronic</h3>
-                <p class="OrderType">Mobile, Earbuds, Tv</p>
+         <div>
+             <img src="CSS/Images/linechart.png" alt="line chart" class="LineChart">
+         </div>
+         <div class="WeeklyIncome">
+             <img src="CSS/Images/incomegauge.png" alt="Income gauge" class="IncomeGauge">
+             <div>
+                 <p><span class="darkText">Income this week</span> <br> $38k less than last week</p>
+                 
+             </div>
+         </div>
         </div>
-        </div>
-        <p class="TransactionAmount">82.5k</p>
-     </div>
 
-     <div class="OrderContent">
-        <div class="ContentWrapper">
-            <span class="IconWrapper IconWrapper--Small hangerContainer">
-                <svg class="icon Icon--Small">
-                    <use xlink:href="CSS/Images/sprite (6).svg#coat-hanger"></use>
-                  </svg>
-            </span>
-            <div class="OrderStatsHistory">
-                <h3 class="OrderCategory">Fashion</h3>
-                <p class="OrderType">Tshirt, Jeans, Shoes</p>
-        </div>
-        </div>
-        <p class="TransactionAmount">23.8k</p>
-     </div>
+      
 
-     <div class="OrderContent">
-        <div class="ContentWrapper">
-            <span class="IconWrapper IconWrapper--Small homeContainer">
-                <svg class="icon Icon--Small">
-                    <use xlink:href="CSS/Images/sprite (8).svg#home"></use>
-                  </svg>
-            </span>
-            <div class="OrderStatsHistory">
-                <h3 class="OrderCategory">Decor</h3>
-                <p class="OrderType">Fine Art, Dining</p>
-        </div>
-        </div>
-        <p class="TransactionAmount">849</p>
-     </div>
-
-     <div class="OrderContent">
-        <div class="ContentWrapper">
-            <span class="IconWrapper IconWrapper--Small sportContainer">
-                <svg class="icon Icon--Small">
-                    <use xlink:href="CSS/Images/sprite (6).svg#football"></use>
-                  </svg>
-            </span>
-            <div class="OrderStatsHistory">
-                <h3 class="OrderCategory">Sports</h3>
-                <p class="OrderType">Football, Cricket Kit</p>
-        </div>
-        </div>
-        <p class="TransactionAmount">99</p>
-     </div>
-</div>
-    
+    </div>
 </body>
 </html>
