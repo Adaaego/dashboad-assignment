@@ -428,13 +428,19 @@ background-color: #FFF5E1;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    font-weight: 700;
 }
 
 .badge--square{
     border-radius: 4px;
     background-color:#E7EAFE;
     color:#8B8BC3;
-    font-weight: 700;
+}
+.badge--round{
+    background-color: #FEF3DD;
+    color:#F0BF68;
+    border-radius: 50px;
+    
 }
 
 .badge__label{
@@ -522,4 +528,37 @@ background-color: #FFF5E1;
         border-right: 2px solid #F4F6F5;
         width: 50vw;
     }
+}
+
+/*PROFILE REPORT BLOCK*/
+.wave{
+    fill: #F9AA17;
+}
+
+.WaveContainer{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+   
+}
+@media screen and (min-width:768px){
+    .WaveContainer{
+        justify-content: center;
+        align-items: center;
+    }
+}
+.ProfileReport{
+    width: 50vw;
+}
+.ProfileReport .percentage{
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.ProfileReport .badge--round{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.ProfileReport H2{
+    margin-bottom: 4px;
 }
