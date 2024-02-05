@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav class="nav">
@@ -18,8 +19,9 @@
             </a>        
     </nav>
     <section>
-        <div class="formContainer">
-            <form action="" class="form">
+        <div class="formContainer" data-aos="fade-up"
+        data-aos-duration="3000" >
+            <form  class="form">
                 <h1>Sign In</h1>
 
                 <input type="text" id="username" placeholder="username or email" class="input" required>
@@ -50,5 +52,10 @@
         </div>
     </section>
    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
