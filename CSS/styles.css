@@ -920,3 +920,50 @@ background-color: #FFF5E1;
 .incomeblock{
     grid-column: 1/3;
 }
+
+@media screen and (min-width:768px){
+    .main{
+        grid-template-rows: repeat(30, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .NavigationBar{
+        grid-column: 1/4;
+    }
+    
+    .MessageBlock{
+        grid-column: 1/4;
+    }
+    
+    .totalrevenueblock{
+        grid-column: 1/4;
+    }
+    
+    .transactionblock{
+        grid-column: 1/2;
+        grid-row: 6;
+    }
+    
+    .statsblock{
+        grid-column: 2/4;
+        grid-row: 6;
+    }
+    
+    .profilereportblock{
+        grid-column: 1/3;
+        grid-row: 4;
+        
+    }
+    .incomeblock{
+        grid-column: 1/4;
+    }
+    .paymentblock{
+        grid-row: 3;
+    }
+
+    .transactionhistory{
+        grid-row: 4;
+    }
+
+}
